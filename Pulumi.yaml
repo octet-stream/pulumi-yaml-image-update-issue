@@ -1,0 +1,23 @@
+name: pulumi-yaml-image-update-issue
+runtime: yaml
+description: A minimal Pulumi YAML program
+
+resources:
+  image:
+    type: docker:Image
+    properties:
+      imageName: pulumi-yaml-image-update-issue
+      skipPush: true
+      build:
+        context: .
+        platform: linux/amd64
+
+  container:
+    type: docker:Container
+    properties:
+      name: pulumi-yaml-image-update-issue
+      image: ${image.baseImageName}
+      ports:
+        - internal: 3000
+          external: 2319
+          ip: 127.0.0.1
