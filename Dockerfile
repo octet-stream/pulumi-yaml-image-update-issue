@@ -29,7 +29,7 @@ COPY --from=build /usr/src/pulumi-yaml-image-update-issue/pnpm-lock.yaml /usr/op
 WORKDIR /usr/opt/pulumi-yaml-image-update-issue
 
 RUN pnpm i -P --frozen-lockfile --ignore-scripts
-RUN echo "Success"
+# RUN echo "Success"
 
 ENV HOST=0.0.0.0
 ENV PORT=3000
