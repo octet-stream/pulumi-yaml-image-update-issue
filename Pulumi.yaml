@@ -19,5 +19,5 @@ resources:
       image: ${image.baseImageName}
       ports:
         - internal: 3000
-          external: 2319
+          external: 3000
           ip: 127.0.0.1
