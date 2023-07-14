@@ -29,4 +29,4 @@ Which is wipes out all resources and re-creates them from scratch, which is far 
 
 ### Expected behaviour
 
-When something is changed within build context, `Dockerfile` or `Pulumi.yaml` config the `pulumi up` command succeedes with no error.
+When something is changed within build context, `Dockerfile` or `Pulumi.yaml` config the `pulumi up` command succeeds with no error.
