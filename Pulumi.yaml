@@ -16,7 +16,7 @@ resources:
     type: docker:Container
     properties:
       name: pulumi-yaml-image-update-issue
-      image: ${image.baseImageName}
+      image: ${image.imageName}
       ports:
         - internal: 3000
           external: 3000
