@@ -2,6 +2,10 @@
 
 This repo demonstrates an error when attempting `pulumi up -y` in YAML runtime on any change
 
+### Resolution
+
+Use `imageName` instead of `baseImageName`. See: [pulumi/pulumi-docker#685 (comment)](https://github.com/pulumi/pulumi-docker/issues/685#issuecomment-1652473263)
+
 ### Reproduction
 
 1. Clone this repository.
